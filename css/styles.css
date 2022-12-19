@@ -135,6 +135,7 @@
        display: flex;
        justify-content: end;
        align-items: center;
+
        margin-left: 0px;      
       }
          .header-container-three .third-text:hover {
