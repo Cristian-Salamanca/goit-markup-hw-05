@@ -1,5 +1,11 @@
 
-  /*general-class*/
+ /*Animations*/
+
+
+
+ 
+ 
+ /*general-class*/
   *,
 *::before,
 *::after {
@@ -548,14 +554,43 @@
  background-color:var(--general-color);
  margin-bottom: 0px;
   }
+
+   /* TASK5*/
+
    .briefcase-card {
    display: block;
    width: 370px;
    height: 404px;
    background-color:#FFFFFF;
    border: 0.1px solid #F2F2F2;
-
+   position: relative;
+   overflow: hidden;
    }
+   /* TASK5*/
+
+
+   .text-box {
+    font-family: var(--principal-text);
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 400;
+    letter-spacing: 0.03em;
+    font-style: normal;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    position: absolute;
+    padding-left: 25px;
+    padding-right: 25px;
+    top:0px;
+    width: 100%;
+    height: 294px;
+    background: rgba(33, 150, 243, 0.9);
+   }
+
+   /* TASK5*/
+
      .briefcase-card:hover{
       box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
       }
@@ -564,6 +599,7 @@
     margin-top: 25px;
     margin-left: 25px;
     display: block;
+    z-index: 1;
     }
       .briefcase-card .text .second-text {
        color:black;
