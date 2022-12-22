@@ -86,10 +86,30 @@
          line-height: 1.14;
          font-weight: 500;
          margin: 30px;
+         position: relative;
          }
            .general-link .second-text:hover {
            color:var(--brand-color);
            }
+
+  /* TASK-5*/
+
+  .general-link .second-text:hover::after {
+  content: "";
+  position: absolute;
+  top: 265%;
+  left:0%;
+  display: flex;
+  align-items: center;  
+  width: 100%;
+  height: 4px;
+  background: #2196F3;
+  border-radius: 2px;
+   }
+  /* TASK-5*/
+
+
+
            .general-link .second-text:focus {
             color:var(--brand-color);
            }
@@ -301,6 +321,30 @@
     justify-content: space-between;
     }
 
+    .image .image-two {
+      display: flex;
+      justify-content: space-between;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .image-two .image-text {
+      position:absolute;
+      top: 71%;
+      width: 100%;
+      background: rgba(47, 48, 58, 0.8);
+      font-family: var(--principal-text);
+      font-style: normal;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 16px;
+      text-align: center;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+      color: #FFFFFF;
+      padding-top: 27px;
+      padding-bottom: 27px;
+    }
    /*team*/
 
    .container-light {
@@ -594,7 +638,8 @@
    .briefcase-card:hover > .text-box {
     display: flex;
     animation-name: blueOverlay;
-    animation-duration: 1s;
+    animation-duration: 250ms;
+    animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
    }
 
    @keyframes blueOverlay {
