@@ -1,8 +1,4 @@
 
- /*Animations*/
-
-
-
  
  
  /*general-class*/
@@ -92,7 +88,6 @@
            color:var(--brand-color);
            }
 
-  /* TASK-5*/
 
   .general-link .second-text:hover::after {
   content: "";
@@ -106,9 +101,6 @@
   background: #2196F3;
   border-radius: 2px;
    }
-  /* TASK-5*/
-
-
 
            .general-link .second-text:focus {
             color:var(--brand-color);
@@ -229,7 +221,6 @@
      letter-spacing: 0.06em;
      } 
 
-   /* TASK5*/
    .backdrop {
     position: fixed;
     top: 0px;
@@ -238,30 +229,54 @@
     width: 100%;
     height: 100%;
     z-index: 3;
+    visibility: visible;
+    pointer-events: auto;
+
    }
    .backdrop .modal {
     position: absolute;
-    top: 0 ;
-    left: 0;
+    top: 10%;
+    left: 33%;
     width: 528px;
     height: 581px;
     background-color: #FFFFFF;
-    
+    animation-name: blueOverlay;
+    animation-duration: 2s;
    }
 
-   top: 60%;
-   right: 50%;
-   margin-top: -300px;
-   margin-right: -18%;
 
    .is-hidden {
     display: none;
+
    }
 
+   .button-close{
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    width: 30px;
+    height: 30px;
+    font-size: 55px;
+    line-height: 45px;
+    border-radius: 50%;
+    text-align: center;
+    margin-right: 10px;
+    cursor: pointer;
+    position: relative;
+    top: 8px;
+    right: -93%;
+    overflow: hidden;
+   }
   
-   /* TASK5*/
-
-
+   .icon-paragrap {
+    position: absolute;
+    top: 20%;
+    left: 0;
+    background-color:#FFFFFF;
+    color:#212121;
+    fill: currentColor;
+    width: 100%;
+    height: 18px;
+      }
   
    /* Paragraph*/
 
@@ -452,7 +467,6 @@
   }
   
   
-  
   .icon-customer,
   .icon-customer-last {
     color: #AFB1B8;
@@ -478,7 +492,6 @@
     color: var(--brand-color);
   }
 
-   
 
    /*Footer*/
 
@@ -634,8 +647,6 @@
    }
 
 
-   /* TASK5*/
-
 
    .text-box {
     font-family: var(--principal-text);
@@ -673,7 +684,6 @@
     }
    }
 
-   /* TASK5*/
 
      .briefcase-card:hover{
       box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
